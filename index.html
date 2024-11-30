@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leyla Mabey's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Welcome to <span class="highlight">Leyla Mabey's Portfolio</span></h1>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="IMG_1666.jpeg" width = 300px alt="Leyla Mabey" class="profile-pic">
+            <p>
+                Hi, I'm Leyla Mabey, a Design Engineering student at Imperial College London with a passion for human interaction and system design. 
+                My work emphasizes user-centric approaches, blending engineering and design to create impactful projects.
+            </p>
+        </section>
+        <section id="portfolio">
+            <h2>My Projects</h2>
+            <div class="project">
+                <h3><a href="page1.html" title="Learn more about this project">Smart Clamp and Drill Set</a></h3>
+                <p>A user-centered tool addressing hand strain and mobility issues, incorporating electromagnetic clamps for secure, efficient use.</p>
+            </div>
+            <div class="project">
+                <h3><a href="page2.html" title="Learn more about this project">IllumniGlobe</a></h3>
+                <p>An interactive snow globe utilizing sensors and motors to deliver a festive experience with synchronized audio-visual displays.</p>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Your Name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Leyla Mabey | <a href="#about">Back to Top</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
