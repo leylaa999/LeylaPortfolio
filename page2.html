@@ -3,26 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IllumniGlobe</title>
-    <link rel="stylesheet" href="../styles.css">
+    <title>Project: IllumniGlobe</title>
+    <link rel="stylesheet" href="styles1.css">
 </head>
 <body>
-    <header>
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#overview">Overview</a>
+        <a href="#features">Features</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#details">Details</a>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="fade-in">
         <h1>IllumniGlobe</h1>
-        <nav>
-            <a href="../index.html#portfolio">Back to Portfolio</a>
-        </nav>
+        <p>Reimagining festive ornaments with engaging, interactive experiences.</p>
     </header>
-    <main>
-        <p>The IllumniGlobe is a festive, interactive snow globe featuring synchronized visual and audio displays:</p>
+
+    <!-- Overview Section -->
+    <section id="overview" class="fade-in slide-up">
+        <h2>Overview</h2>
+        <p>
+            The IllumniGlobe transforms the traditional snow globe into an interactive festive experience. Human interactions such as touch, tilt, and motion activate hidden displays and festive states, creating a captivating journey through different scenes.
+        </p>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="fade-in slide-up">
+        <h2>Key Features</h2>
         <ul>
-            <li>Capacitive sensing and gyroscope technology.</li>
-            <li>Integrated audio, motorized components, and NeoPixel LEDs.</li>
-            <li>Customizable themes for different festive occasions.</li>
+            <li>Capacitive sensing, accelerometer, and gyroscope for interaction detection.</li>
+            <li>Vibrant NeoPixel displays synchronized with audio and motor systems.</li>
+            <li>Compact gear mechanisms for moving features like Santa figurines.</li>
+            <li>Interactive festive scenes triggered by user actions.</li>
         </ul>
-    </main>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="fade-in">
+        <h2>Gallery</h2>
+        <div class="photo-grid">
+            <img src="IMG_0684 1.png" alt="IllumniGlobe close-up" class="fade-in">
+            
+        </div>
+    </section>
+
+    <!-- Details Section -->
+    <section id="details" class="fade-in slide-up">
+        <h2>Development Process</h2>
+        <p>
+            The IllumniGlobe uses capacitive sensing modules, an accelerometer, and a gyroscope to measure interactions. These inputs trigger vibrant NeoPixel displays, synchronized audio, and intricate motorized systems. 
+            Each element was designed to maximize engagement while maintaining a compact structure and reliability.
+        </p>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <p>&copy; 2024 Leyla Mabey</p>
+        <a href="index.html">Back to Home</a>
     </footer>
+
+    <script src="js1.js"></script>
 </body>
 </html>

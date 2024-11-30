@@ -1,0 +1,135 @@
+/* General Animations */
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+.slide-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
+
+.slide-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* General Styling */
+body {
+    background-color: #121212;
+    color: #fff;
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #1a1a1a;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: #ababab;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #eecede;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(to right, #d8b3d3, #fdcafb);
+    color: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0.5rem 0;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Section Styling */
+section {
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 900px;
+    background: #1d1d1d;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #c3c3c3;
+}
+
+section p, section ul {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Photo Grid Styling */
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjusts columns based on available space */
+    gap: 15px; /* Space between images */
+    margin-top: 1rem;
+    justify-items: center; /* Center-align items in the grid */
+}
+
+.photo-grid img {
+    width: 100%; /* Ensure the image width is responsive */
+    max-width: 200px; /* Limit the maximum width for large screens */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Ensure gallery section adapts to full width */
+#gallery {
+    width: 100%;
+    overflow: hidden; /* Prevent horizontal scrolling */
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #1a1a1a;
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+
+footer a {
+    color: #646464;
+    text-decoration: none;
+    font-weight: bold;
+}

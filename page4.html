@@ -3,26 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Duolog</title>
-    <link rel="stylesheet" href="../styles.css">
+    <title>Project: Duolog</title>
+    <link rel="stylesheet" href="styles1.css">
 </head>
 <body>
-    <header>
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#overview">Overview</a>
+        <a href="#features">Features</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#details">Details</a>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="fade-in">
         <h1>Duolog</h1>
-        <nav>
-            <a href="../index.html#portfolio">Back to Portfolio</a>
-        </nav>
+        <p>An interactive platform for performing arts students, awarded 2nd place at ICHack.</p>
     </header>
-    <main>
-        <p>An award-winning text-to-speech platform tailored for performing arts students rehearsing scripts:</p>
+
+    <!-- Overview Section -->
+    <section id="overview" class="fade-in slide-up">
+        <h2>Overview</h2>
+        <p>
+            Duolog is an online platform designed for performing arts students, enabling them to rehearse scripts with AI-driven text-to-speech capabilities. It supports multiple characters and customizable playback options.
+        </p>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="fade-in slide-up">
+        <h2>Key Features</h2>
         <ul>
-            <li>Customizable voice options to mimic different characters.</li>
-            <li>Streamlined UI for fast, intuitive script practice.</li>
-            <li>Support for collaborative script rehearsal sessions.</li>
+            <li>Text-to-speech API with customizable voices and speeds.</li>
+            <li>Supports unlimited characters for rehearsal scenarios.</li>
+            <li>Interactive interface enhancing script practice efficiency.</li>
+            <li>Collaborative rehearsal features for group performances.</li>
         </ul>
-    </main>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="fade-in">
+        <h2>Gallery</h2>
+        <div class="photo-grid">
+            <img src="WhatsApp Image 2024-06-23 at 23.34.58 1.jpg" alt="Duolog interface" class="fade-in">
+            
+        </div>
+    </section>
+
+    <!-- Details Section -->
+    <section id="details" class="fade-in slide-up">
+        <h2>Development Process</h2>
+        <p>
+            Built during ICHack, Duolog integrates advanced APIs to provide performing arts students with an innovative rehearsal tool. The platform focuses on accessibility, usability, and enhancing the learning experience through interactive technology.
+        </p>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <p>&copy; 2024 Leyla Mabey</p>
+        <a href="index.html">Back to Home</a>
     </footer>
+
+    <script src="js1.js"></script>
 </body>
 </html>

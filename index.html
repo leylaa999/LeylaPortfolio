@@ -7,49 +7,70 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <h1>Welcome to <span class="highlight">Leyla Mabey's Portfolio</span></h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Hero Section (Header) -->
+    <header class="slide-up">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Explore my work and learn more about my journey.</p>
     </header>
-    <main>
-        <section id="about">
+    
+    <section id="about" class="slide-up">
             <h2>About Me</h2>
-            <img src="IMG_1666.jpeg" width = 300px alt="Leyla Mabey" class="profile-pic">
+            <img src="IMG_1666.jpeg"   alt="Leyla Mabey" class="profile-pic">
             <p>
                 Hi, I'm Leyla Mabey, a Design Engineering student at Imperial College London with a passion for human interaction and system design. 
                 My work emphasizes user-centric approaches, blending engineering and design to create impactful projects.
             </p>
         </section>
-        <section id="portfolio">
-            <h2>My Projects</h2>
-            <div class="project-card">
-                <img src="project1-image.jpg" alt="Smart Clamp and Drill Set">
-                <h3>Smart Clamp and Drill Set</h3>
-                <a href="page1.html">View Details</a>
-            </div>
-            <div class="project-card">
-                <img src="project2-image.jpg" alt="IllumniGlobe">
-                <h3>IllumniGlobe</h3>
-                <a href="page2.html">View Details</a>
-            </div>
-            <div class="project-card">
-                <img src="project3-image.jpg" alt="Green Cosmetics Pump">
-                <h3>Green Cosmetics Pump</h3>
-                <a href="page3.html">View Details</a>
-            </div>
-            <div class="project-card">
-                <img src="project4-image.jpg" alt="Duolog">
-                <h3>Duolog</h3>
-                <a href="page4.html">View Details</a>
+        <section id="photo-gallery" class="fade-in slide-up">
+            <h2>Gallery</h2>
+            <div class="photo-grid">
+                <img src="image 3.jpg" alt="Gallery Photo 1">
+                <img src="image 4.jpg" alt="Gallery Photo 2">
+                
             </div>
         </section>
-        <section id="contact">
+        
+        <section id="portfolio" class="slide-up">
+            <h2>My Projects</h2>
+            <button class="scroll-btn left">&lt;</button>
+            <button class="scroll-btn right">&gt;</button>
+
+            <div class="project-container">
+                   <div class="project-card" class="slide-up">
+                   <img src="box v700 2.jpg" alt="Smart Clamp and Drill Set">
+                    <h3>Smart Clamp and Drill Set</h3>
+                    <p>A seamless user experience for efficient DIY tasks.</p>
+                    <a href="page1.html">View Project</a>
+                </div>
+                <div class="project-card" class="slide-up">
+                    <img src="IMG_0684 1.png" alt="IllumniGlobe">
+                    <h3>IllumniGlobe</h3>
+                    <p>Interactive globe ornaments for the holiday season.</p>
+                    <a href="page2.html">View Project</a>
+                </div>
+                <div class="project-card" class="slide-up">
+                    <img src="A4 - 14.jpg" alt="Green Cosmetics Pump">
+                     <h3>Green Cosmetics Pump</h3>
+                     <p>Eco-friendly solutions for beauty packaging.</p>
+                     <a href="page3.html">View Project</a>
+                 </div>
+                 <div class="project-card" class="slide-up">
+                     <img src="WhatsApp Image 2024-06-23 at 23.34.58 1.jpg" alt="Duolog">
+                     <h3>Duolog</h3>
+                     <p>An interactive platform for performing arts students, awarded 2nd place at ICHack.</p>
+                     <a href="page4.html">View Project</a>
+                 </div>
+            </div>
+        
+        </section>
+        <section id="contact" class="slide-up">
             <h2>Contact Me</h2>
             <form id="contact-form">
                 <label for="name">Name:</label>
