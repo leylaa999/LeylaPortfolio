@@ -1,33 +1,30 @@
-// Smooth scrolling for navigation links
+// Smooth scrolling for navigation
 document.querySelectorAll('nav a').forEach(link => {
-    link.addEventListener('click', e => {
-        e.preventDefault();
-        const targetId = link.getAttribute('href').substring(1);
-        document.getElementById(targetId).scrollIntoView({
-            behavior: 'smooth',
-            block: 'start',
-        });
-    });
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    target.scrollIntoView({ behavior: 'smooth' });
+  });
 });
 
-// Highlight active section in nav on scroll
-window.addEventListener('scroll', () => {
-    const sections = document.querySelectorAll('section');
-    const navLinks = document.querySelectorAll('nav a');
-    let current = '';
+// Modal popup for project previews
+const modal = document.querySelector('.modal');
+const modalContent = document.querySelector('.modal-content');
+const closeBtn = document.querySelector('.close-btn');
 
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        if (scrollY >= sectionTop - 50) {
-            current = section.getAttribute('id');
-        }
-    });
-
-    navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href').includes(current)) {
-            link.classList.add('active');
-        }
-    });
+document.querySelectorAll('.project-card img').forEach(img => {
+  img.addEventListener('click', function () {
+    modal.style.display = 'block';
+    modalContent.innerHTML = `<img src="${this.src}" style="width:100%;">`;
+  });
 });
 
+closeBtn.addEventListener('click', function () {
+  modal.style.display = 'none';
+});
+
+window.addEventListener('click', function (e) {
+  if (e.target === modal) {
+    modal.style.display = 'none';
+  }
+});
