@@ -92,15 +92,15 @@ section p, section ul {
 /* Photo Grid Styling */
 .photo-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjusts columns based on available space */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 15px; /* Space between images */
     margin-top: 1rem;
-    justify-items: center; /* Center-align items in the grid */
+    justify-items: center; 
 }
 
 .photo-grid img {
-    width: 100%; /* Ensure the image width is responsive */
-    max-width: 200px; /* Limit the maximum width for large screens */
+    width: 100%; 
+    max-width: 200px; 
     height: auto; /* Maintain the aspect ratio */
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -112,10 +112,9 @@ section p, section ul {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
 }
 
-/* Ensure gallery section adapts to full width */
 #gallery {
     width: 100%;
-    overflow: hidden; /* Prevent horizontal scrolling */
+    overflow: hidden; 
 }
 
 
