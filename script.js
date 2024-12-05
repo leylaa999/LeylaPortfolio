@@ -1,19 +1,18 @@
-// Function to add 'visible' class when the element is in view
+
 const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
-        console.log(entry.target); // Log each observed element to see if it's detected
+        console.log(entry.target); 
         if (entry.isIntersecting) {
-            console.log('Element is in view:', entry.target); // Debug: Element is in view
+            console.log('Element is in view:', entry.target); 
             entry.target.classList.add('visible');
-            observer.unobserve(entry.target); // Stop observing once it's in view
+            observer.unobserve(entry.target); 
         }
     });
-}, { threshold: 0.5 }); // Trigger when 50% of the element is in view
+}, { threshold: 0.5 }); 
 
-// Select the elements you want to animate (fade-in and slide-up)
 const fadeSlideUpElements = document.querySelectorAll('.fade-in, .slide-up');
 
-// Observe each element
+
 fadeSlideUpElements.forEach(element => {
     observer.observe(element);
 });
@@ -23,7 +22,7 @@ let isDragging = false;
 let startX;
 let scrollLeft;
 
-// Mouse Down Event
+
 projectContainer.addEventListener('mousedown', (e) => {
     isDragging = true;
     projectContainer.classList.add('dragging');
@@ -37,13 +36,13 @@ projectContainer.addEventListener('mouseleave', () => {
     projectContainer.classList.remove('dragging');
 });
 
-// Mouse Up Event
+
 projectContainer.addEventListener('mouseup', () => {
     isDragging = false;
     projectContainer.classList.remove('dragging');
 });
 
-// Mouse Move Event
+
 projectContainer.addEventListener('mousemove', (e) => {
     if (!isDragging) return;
     e.preventDefault();
